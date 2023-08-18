@@ -30,4 +30,4 @@ streamlit.text(fruityvice_response.json())
 # takes away brackets
 fruityvice_normalized = pandas.json_normalize(fruityvice_response.json())
 # inserts to table
-streamlit.dataframe(fruityvice_normalized)
+# streamlit.dataframe(fruityvice_normalized)
