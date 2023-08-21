@@ -39,11 +39,6 @@ try:
 except URLError as e:
   streamlit.error()
 
-# takes away brackets
-fruityvice_normalized = pd.json_normalize(fruityvice_response.json())
-# inserts to table
-streamlit.dataframe(fruityvice_normalized)
-
 streamlit.header("The fruit load list contains:")
 #Snowflake related functions
 def get_fruit_load_list():
